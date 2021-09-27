@@ -8,8 +8,8 @@ $('#form-handler').on('submit', function(event) {
     // let state = $('#state').val();
     let units = $('#units').val();
 
-    // $.get(`https://api.openweathermap.org/data/2.5/weather?q=${city},{state}&units=${units}&appid=c6e2c2433130665a9454caa32099ba8f` function(res) {
-        $.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=c6e2c2433130665a9454caa32099ba8f`, function(res) {
+    // $.get(`https://api.openweathermap.org/data/2.5/weather?q=${city},{state}&units=${units}&appid=` function(res) {
+        $.get(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=`, function(res) {
 
         let Weather;
         if (units == 'imperial') {
