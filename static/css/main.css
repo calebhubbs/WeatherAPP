@@ -1,4 +1,15 @@
 body {
     background-image: url('/static/images/pexels-kaique-rocha.jpg');
     background-repeat: no-repeat;
+    background-size: cover;
+}
+
+ul {
+    margin: 20px;
+}
+li { 
+    margin: 5px;
+}
+#form-handler {
+    margin: 20px;
 }

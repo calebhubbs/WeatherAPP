@@ -42,16 +42,44 @@
       <form id="form-handler">
         <div class="form-group row">
           <input type="text" class="form-control col" id="city" placeholder="Enter a City">
+          <!-- I wanted to add this but did not <input type="text" class="form-control col" id="state" placeholder="Enter State"> --> 
           <div class="btn-group">
-            <select class="form-control" id="weather">
-              <option value="Celcius">Celcius</option>
-              <option value="Fahrenheit">Fahrenheit</option>
-              <option value="Kelvin">Kelvin</option>
+            <select class="form-control col" id="units">
+              <option value="imperial">Fahrenheit</option>
+              <option value="metric">Celcius</option>
             </select>
           </div>
         </div>
         <button type="submit" class="btn btn-primary btn-block">Get Weather</button>
       </form>
+
+
+      <!-- THIS SHOULD BE WHERE IT WILL OUTPUT THE WEATHER BAED ON WHAT CITY THEY ENTER -->
+      <div id='output'>
+        <ul class="container col-md-3 list-group" style="list-style-type: none;">
+          <div class="row">
+            <li class="col" >Current Weather: </li>
+            <li id="cweather" class="col"></li>
+          </div>
+          <div class="row">
+            <li class="col"> Feels Like: </li>
+            <li id="ctemp" class="col"></li>
+          </div>
+          <div class="row">
+            <li class="col"> Today's High: </li>
+            <li id="high" class="col"></li>
+          </div>
+          <div class="row">
+            <li class="col"> Today's Low: </li>
+            <li id="low" class="col"></li>
+          </div>
+          <div class="row">
+            <li class="col"> Humidity (%)</li>
+            <li id="humidity" class="col"></li>
+          </div>
+        </ul>
+      </div>
+    </div>
 
 
 
@@ -70,7 +98,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
     crossorigin="anonymous"></script>
-  <script src="static/js/app.js"></script>
+  <script src="/main.js"></script>
+
 
 </body>
 
